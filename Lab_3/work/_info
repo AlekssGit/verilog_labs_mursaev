@@ -1,0 +1,103 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alvas/Documents/Univer/Mursaev/Lab_2
+T_opt
+!s110 1615713981
+VQIH=SohF]V3O@ZVF2TmVc0
+Z1 04 4 4 work test fast 0
+=1-482ae37da44c-604dd6bd-222-3a14
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OL;O;10.4c;61
+R0
+T_opt1
+!s110 1615714089
+Vc_d<4J;TL4ULAHB1C^9F;2
+04 5 4 work decod fast 0
+=1-482ae37da44c-604dd729-24f-39e0
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1615715694
+VUVai^l<?9QB[IF@HC@PCe1
+R1
+=3-482ae37da44c-604ddd6e-257-328c
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt2
+R3
+R0
+vcomplex
+Z4 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^8:hEaVZI5Nb8jW3VB27:1
+I<DCdPcV@fWnJ5h:N:ibhS0
+!s105 str_l3_sv_unit
+S1
+Z6 dC:/Users/alvas/Documents/Univer/Mursaev/Lab_3
+w1618380429
+8C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/str_l3.sv
+FC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/str_l3.sv
+L0 1
+Z7 OL;L;10.4c;61
+!s108 1618380432.000000
+!s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/str_l3.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/str_l3.sv|
+!i113 0
+Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdecod
+R4
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 U_FR_EX<1>z9_d<>Id=h51
+I7bjZzg9ADh;V_HM1IWLh`0
+!s105 compon_sv_unit
+S1
+R6
+w1615712205
+8C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/compon.sv
+FC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/compon.sv
+L0 1
+R7
+!s108 1615715671.000000
+!s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/compon.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/compon.sv|
+!i113 0
+R8
+vtest
+R4
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 l]Abj2hZWBi3e79ijD_^U3
+IhmR9fTFkmlzII<7m:1@5f1
+!s105 tb_l3_sv_unit
+S1
+R6
+w1618380738
+8C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/tb_l3.sv
+FC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/tb_l3.sv
+L0 1
+R7
+!s108 1618380745.000000
+!s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/tb_l3.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/tb_l3.sv|
+!i113 0
+R8

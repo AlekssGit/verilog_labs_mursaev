@@ -1,0 +1,72 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA/19.1
+T_opt
+!s110 1617782730
+VO:ZGJzodLR@G8<:3;^<Zj3
+Z1 04 4 4 work main fast 0
+=1-482ae37da44c-606d67c9-23e-7d0
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.4c;61
+R0
+T_opt1
+!s110 1617786527
+VAT7l?1VTNN;A?VR1a:DQU2
+R1
+=7-482ae37da44c-606d769e-28d-3dac
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt1
+R2
+R0
+vmain
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 kjfS@QA9m4QU_LNjE6P4c0
+I]cc>5?V]aWILkWaAldz1L2
+!s105 main_sv_unit
+S1
+Z4 dC:/Users/alvas/Documents/Univer/Mursaev/Lab_2
+w1617786785
+8C:/Users/alvas/Documents/Univer/Mursaev/Lab_2/main.sv
+FC:/Users/alvas/Documents/Univer/Mursaev/Lab_2/main.sv
+L0 3
+Z5 OL;L;10.4c;61
+!s108 1617806480.000000
+!s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_2/main.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_2/main.sv|
+!i113 0
+o-work work -sv
+Utable_func
+!s110 1617785570
+!i10b 1
+!s100 dEb0ZB_^SJWXAdN0FOH9A2
+IBK7aoCa8M7_R;ob^=7bZ^2
+R3
+!s105 fun_tt_sv_unit
+S1
+R4
+w1617785554
+8C:/Users/alvas/Documents/Univer/Mursaev/Lab_2/fun_tt.sv
+FC:/Users/alvas/Documents/Univer/Mursaev/Lab_2/fun_tt.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1617785570.000000
+!s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_2/fun_tt.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_2/fun_tt.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact

@@ -1,0 +1,33 @@
+C:/Users/alvas/Documents/Univer/Mursaev/Lab_5/control.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_5/control.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module control_unit
+
+Top level modules:
+	control_unit
+
+} {} {}} C:/Users/alvas/Documents/Univer/Mursaev/Lab_5/struct_l6.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_5/struct_l6.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling interface sys_bus
+-- Compiling module mp_mult
+
+Top level modules:
+	mp_mult
+
+} {} {}} C:/Users/alvas/Documents/Univer/Mursaev/Lab_5/tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_5/tb.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module top
+-- Compiling program test_bench
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/alvas/Documents/Univer/Mursaev/Lab_5/components_my.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_5/components_my.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module counter
+-- Compiling module shift_register
+
+Top level modules:
+	counter
+	shift_register
+
+} {} {}}

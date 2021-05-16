@@ -1,0 +1,8 @@
+C:/Users/alvas/Documents/Univer/Mursaev/Lab_2/fun_tt.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_2/fun_tt.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling UDP table_func
+
+Top level modules:
+	--none--
+
+} {} {}}

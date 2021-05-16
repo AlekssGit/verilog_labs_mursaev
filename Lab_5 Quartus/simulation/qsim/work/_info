@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/simulation/qsim
+vhard_block
+Z1 !s110 1621173811
+!i10b 1
+!s100 S;KU9h`Hb53]@mBD<4Z?D2
+IDaW7b@O60BDVAAdTPeC6W2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1621173810
+Z4 8Lab_5.vo
+Z5 FLab_5.vo
+L0 2739
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1621173811.000000
+Z8 !s107 Lab_5.vo|
+Z9 !s90 -work|work|Lab_5.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vstruct_l6
+R1
+!i10b 1
+!s100 lz;;OQJlRogJF]UY79h2h1
+I^nQDe>`4d_9GbC:k]VddV2
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vstruct_l6_vlg_vec_tst
+R1
+!i10b 1
+!s100 2bJHJg_4TJ[107M`C9]NA1
+IJ?CU5Z=o^R=KR[mjKAg;]2
+R2
+R0
+w1621173809
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

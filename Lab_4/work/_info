@@ -1,0 +1,151 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alvas/Documents/Univer/Mursaev/Lab_4
+T_opt
+!s110 1621168333
+VfF^^VeVcP:YVbkU?_60791
+Z1 04 3 4 work top fast 0
+=1-482ae37da44c-60a110cb-387-38bc
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OL;O;10.4c;61
+R0
+T_opt1
+!s110 1617538145
+VQC4W_CBXim9h1^@1R^K:c0
+R1
+04 21 4 work state_machine_numbers fast 0
+04 21 4 work state_machine_letters fast 0
+04 9 4 work generator fast 0
+=1-482ae37da44c-6069ac61-9a-20d4
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1617543592
+VQJTB0GN8;A:<2n_SAg6LV0
+R1
+=3-482ae37da44c-6069c1a8-1d7-488
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt2
+R3
+R0
+4generator
+Z4 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Yi6DG8EYMPD5?Ul3<I<k:1
+Ik5S4kh5dH;eNLFlz5NAoG3
+Z6 !s105 test_bench_sv_unit
+S1
+R0
+Z7 w1620817245
+Z8 8C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/test_bench.sv
+Z9 FC:/Users/alvas/Documents/Univer/Mursaev/Lab_4/test_bench.sv
+L0 16
+Z10 OL;L;10.4c;61
+Z11 !s108 1621167590.000000
+Z12 !s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/test_bench.sv|
+Z13 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/test_bench.sv|
+!i113 0
+Z14 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vstate_machine_letters
+R4
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 gC58_TO1eMN3<`W1n<^^@1
+IR31RelI:6_dXQ08TRno6e0
+Z15 !s105 state_machine_sv_unit
+S1
+R0
+Z16 w1620817249
+Z17 8C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/state_machine.sv
+Z18 FC:/Users/alvas/Documents/Univer/Mursaev/Lab_4/state_machine.sv
+L0 52
+R10
+R11
+Z19 !s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/state_machine.sv|
+Z20 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/state_machine.sv|
+!i113 0
+R14
+vstate_machine_numbers
+R4
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 a<g3fm<;=OULH1>GNVnc>2
+IEJC@d^@n;e4e?RRV[gfnE3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 1
+R10
+R11
+R19
+R20
+!i113 0
+R14
+Xtest_bench_sv_unit
+R4
+!s110 1617538363
+!i10b 1
+!s100 ]KNEk6?]>AE35W63]A3HE2
+I`AX[6BJ<OYd<5CPSlNWYZ2
+V`AX[6BJ<OYd<5CPSlNWYZ2
+!i103 1
+S1
+R0
+w1617538359
+R8
+R9
+L0 66
+R10
+r1
+!s85 0
+31
+!s108 1617538363.000000
+R12
+R13
+!i113 0
+R14
+vtop
+R4
+R5
+r1
+!s85 0
+31
+!i10b 1
+!s100 Wd[LdeFhi4bkLU7;]<FA_2
+Im6]AK58<6SG3V8]HXkX^Q2
+R6
+S1
+R0
+R7
+R8
+R9
+L0 1
+R10
+R11
+R12
+R13
+!i113 0
+R14

@@ -1,0 +1,229 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alvas/Documents/Univer/Mursaev/Lab_3
+T_opt
+!s110 1617471137
+VQI6ZF[CPUT:3To8Mf86KV0
+Z1 04 7 4 work test_sv fast 0
+=14-482ae37da44c-6068a6a1-1e7-40e8
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.4c;61
+R0
+T_opt1
+!s110 1618382364
+V2d68zHX9J7VlzYK8d<HLf3
+R1
+=1-482ae37da44c-60768e1b-2e2-28d0
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt1
+R2
+R0
+Ybus
+Z3 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ULhe4`ngML:l_EPAYP`SP3
+IV>67Uo8B[zen96C=XGmeN3
+Z5 !s105 program_26_interface_sv_unit
+S1
+Z6 dC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2
+Z7 w1618384747
+Z8 8C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/program_&_interface.sv
+Z9 FC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/program_&_interface.sv
+L0 1
+Z10 OL;L;10.4c;61
+Z11 !s108 1618384753.000000
+Z12 !s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/program_&_interface.sv|
+Z13 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/program_&_interface.sv|
+!i113 0
+Z14 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vcomplex
+R3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^8:hEaVZI5Nb8jW3VB27:1
+IgOW3i_Z@]0R>bWD5aYRog0
+!s105 str_l3_sv_unit
+S1
+R6
+w1618381630
+Z15 8C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/str_l3.sv
+Z16 FC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/str_l3.sv
+L0 1
+R10
+Z17 !s108 1618384064.000000
+Z18 !s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/str_l3.sv|
+Z19 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/str_l3.sv|
+!i113 0
+R14
+vdecod
+R3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 U_FR_EX<1>z9_d<>Id=h51
+I_dM9i??gIijFC=bMGVVX83
+!s105 compon_sv_unit
+S1
+R6
+w1617467876
+8C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/compon.sv
+FC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/compon.sv
+L0 1
+R10
+R17
+!s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/compon.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/compon.sv|
+!i113 0
+R14
+vdut
+R3
+!s110 1618384064
+!i10b 1
+!s100 Gl7J[]aUWLJng_j>=3NDZ0
+I56GjEHc_K;4k;X14HiPXF0
+R4
+R5
+S1
+R6
+w1618384051
+R8
+R9
+L0 56
+R10
+r1
+!s85 0
+31
+R17
+R12
+R13
+!i113 0
+R14
+vmot
+R3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 6kP]VJRQHF@i@bDo64f6f3
+ILY<CbNIC69KIRcb[Q[K8l2
+R5
+S1
+R6
+R7
+R8
+R9
+L0 34
+R10
+R11
+R12
+R13
+!i113 0
+R14
+4stimul
+R3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 WiH2aS6P0U@G>_[nn9DEz1
+I<lKHdY9UZ5L=9YCGMk>;70
+R5
+S1
+R6
+R7
+R8
+R9
+L0 16
+R10
+R11
+R12
+R13
+!i113 0
+R14
+Xstr_l3_sv_unit
+R3
+!s110 1617469237
+!i10b 1
+!s100 7UX0K^Y?5=nH[_KXli>Ra1
+IIDaN76El8a:oiMO75_EQd2
+VIDaN76El8a:oiMO75_EQd2
+!i103 1
+S1
+R6
+w1617468163
+R15
+R16
+L0 18
+R10
+r1
+!s85 0
+31
+!s108 1617469237.000000
+R18
+R19
+!i113 0
+R14
+vtest
+R3
+!s110 1617467004
+!i10b 1
+!s100 ZG9m0l6VBi1o2<I^coae`0
+Ii9B4b1L]Tm:`6a[EGei1J1
+R4
+!s105 tb_l3_sv_unit
+S1
+R6
+w1615715590
+8C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/tb_l3.sv
+FC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/tb_l3.sv
+L0 1
+R10
+r1
+!s85 0
+31
+!s108 1617467004.000000
+!s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/tb_l3.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/tb_l3.sv|
+!i113 0
+R14
+vtest_sv
+R3
+R4
+r1
+!s85 0
+31
+!i10b 1
+!s100 UoCbkj6E?Cz1WjWSO5^I32
+I^8J:FX[:l0;ZYA8@9ICgc0
+!s105 Tb__l3_sv_unit
+S1
+R6
+w1618384031
+8C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/Tb__l3.sv
+FC:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/Tb__l3.sv
+L0 1
+R10
+R17
+!s107 C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/Tb__l3.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/Tb__l3.sv|
+!i113 0
+R14

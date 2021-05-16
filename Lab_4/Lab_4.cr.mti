@@ -1,0 +1,18 @@
+C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/test_bench.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/test_bench.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module top
+-- Compiling program generator
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/state_machine.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_4/state_machine.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module state_machine_numbers
+-- Compiling module state_machine_letters
+
+Top level modules:
+	state_machine_numbers
+	state_machine_letters
+
+} {} {}}

@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "data_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

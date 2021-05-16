@@ -1,0 +1,32 @@
+C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/compon.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/compon.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module decod
+
+Top level modules:
+	decod
+
+} {} {}} C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/program_&_interface.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/program_&_interface.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling interface bus
+-- Compiling program stimul
+-- Compiling module mot
+
+Top level modules:
+	stimul
+	mot
+
+} {} {}} C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/Tb__l3.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/Tb__l3.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module test_sv
+
+Top level modules:
+	test_sv
+
+} {} {}} C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/str_l3.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/alvas/Documents/Univer/Mursaev/Lab_3/Lab_3_part_2/str_l3.sv
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module complex
+
+Top level modules:
+	complex
+
+} {} {}}

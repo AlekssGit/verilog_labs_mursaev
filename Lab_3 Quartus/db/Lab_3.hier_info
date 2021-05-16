@@ -1,0 +1,200 @@
+|Tb__l3
+data_out[0] <= complex:m2.data_out
+data_out[1] <= complex:m2.data_out
+data_out[2] <= complex:m2.data_out
+i_clock => i_clock.IN1
+lcd[0] <= semisegment:sem.result
+lcd[1] <= <VCC>
+lcd[2] <= <VCC>
+lcd[3] <= <VCC>
+lcd[4] <= <VCC>
+lcd[5] <= <VCC>
+lcd[6] <= <VCC>
+digits[0] <= <GND>
+digits[1] <= <VCC>
+digits[2] <= <VCC>
+digits[3] <= <VCC>
+
+
+|Tb__l3|generator:gen
+i_clk => o_clk~reg0.CLK
+i_clk => counter[0].CLK
+i_clk => counter[1].CLK
+i_clk => counter[2].CLK
+i_clk => counter[3].CLK
+i_clk => counter[4].CLK
+i_clk => counter[5].CLK
+i_clk => counter[6].CLK
+i_clk => counter[7].CLK
+i_clk => counter[8].CLK
+i_clk => counter[9].CLK
+i_clk => counter[10].CLK
+i_clk => counter[11].CLK
+i_clk => counter[12].CLK
+i_clk => counter[13].CLK
+i_clk => counter[14].CLK
+i_clk => counter[15].CLK
+i_clk => counter[16].CLK
+i_clk => counter[17].CLK
+i_clk => counter[18].CLK
+i_clk => counter[19].CLK
+i_clk => counter[20].CLK
+i_clk => counter[21].CLK
+i_clk => counter[22].CLK
+i_clk => counter[23].CLK
+i_clk => counter[24].CLK
+i_clk => counter[25].CLK
+i_clk => counter[26].CLK
+i_clk => counter[27].CLK
+i_clk => counter[28].CLK
+i_clk => counter[29].CLK
+i_clk => counter[30].CLK
+i_clk => counter[31].CLK
+o_clk <= o_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tb__l3|semisegment:sem
+number[0] => Decoder0.IN3
+number[1] => Decoder0.IN2
+number[2] => Decoder0.IN1
+number[3] => Decoder0.IN0
+result[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tb__l3|counter:cnt
+clock => clock.IN1
+q[0] <= lpm_counter:LPM_COUNTER_component.q
+q[1] <= lpm_counter:LPM_COUNTER_component.q
+q[2] <= lpm_counter:LPM_COUNTER_component.q
+
+
+|Tb__l3|counter:cnt|lpm_counter:LPM_COUNTER_component
+clock => cntr_9ph:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_9ph:auto_generated.q[0]
+q[1] <= cntr_9ph:auto_generated.q[1]
+q[2] <= cntr_9ph:auto_generated.q[2]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|Tb__l3|counter:cnt|lpm_counter:LPM_COUNTER_component|cntr_9ph:auto_generated
+clock => counter_reg_bit[2].CLK
+clock => counter_reg_bit[1].CLK
+clock => counter_reg_bit[0].CLK
+q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tb__l3|complex:m2
+data_in[0] => data_in[0].IN1
+data_in[1] => data_in[1].IN1
+data_in[2] => data_in[2].IN1
+data_out[0] <= mod2.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= mod3.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= mod4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tb__l3|complex:m2|decode:comb_3
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+eq0 <= lpm_decode:LPM_DECODE_component.eq
+eq1 <= lpm_decode:LPM_DECODE_component.eq
+eq2 <= lpm_decode:LPM_DECODE_component.eq
+eq3 <= lpm_decode:LPM_DECODE_component.eq
+eq4 <= lpm_decode:LPM_DECODE_component.eq
+eq5 <= lpm_decode:LPM_DECODE_component.eq
+eq6 <= lpm_decode:LPM_DECODE_component.eq
+eq7 <= lpm_decode:LPM_DECODE_component.eq
+
+
+|Tb__l3|complex:m2|decode:comb_3|lpm_decode:LPM_DECODE_component
+data[0] => decode_ebf:auto_generated.data[0]
+data[1] => decode_ebf:auto_generated.data[1]
+data[2] => decode_ebf:auto_generated.data[2]
+enable => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+eq[0] <= decode_ebf:auto_generated.eq[0]
+eq[1] <= decode_ebf:auto_generated.eq[1]
+eq[2] <= decode_ebf:auto_generated.eq[2]
+eq[3] <= decode_ebf:auto_generated.eq[3]
+eq[4] <= decode_ebf:auto_generated.eq[4]
+eq[5] <= decode_ebf:auto_generated.eq[5]
+eq[6] <= decode_ebf:auto_generated.eq[6]
+eq[7] <= decode_ebf:auto_generated.eq[7]
+
+
+|Tb__l3|complex:m2|decode:comb_3|lpm_decode:LPM_DECODE_component|decode_ebf:auto_generated
+data[0] => w_anode19w[1].IN1
+data[0] => w_anode1w[1].IN0
+data[0] => w_anode30w[1].IN0
+data[0] => w_anode41w[1].IN1
+data[0] => w_anode52w[1].IN0
+data[0] => w_anode63w[1].IN1
+data[0] => w_anode74w[1].IN0
+data[0] => w_anode85w[1].IN1
+data[1] => w_anode19w[2].IN0
+data[1] => w_anode1w[2].IN0
+data[1] => w_anode30w[2].IN1
+data[1] => w_anode41w[2].IN1
+data[1] => w_anode52w[2].IN0
+data[1] => w_anode63w[2].IN0
+data[1] => w_anode74w[2].IN1
+data[1] => w_anode85w[2].IN1
+data[2] => w_anode19w[3].IN0
+data[2] => w_anode1w[3].IN0
+data[2] => w_anode30w[3].IN0
+data[2] => w_anode41w[3].IN0
+data[2] => w_anode52w[3].IN1
+data[2] => w_anode63w[3].IN1
+data[2] => w_anode74w[3].IN1
+data[2] => w_anode85w[3].IN1
+eq[0] <= w_anode1w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[1] <= w_anode19w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[2] <= w_anode30w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[3] <= w_anode41w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[4] <= w_anode52w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[5] <= w_anode63w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[6] <= w_anode74w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[7] <= w_anode85w[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

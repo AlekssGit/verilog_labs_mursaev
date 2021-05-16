@@ -1,0 +1,74 @@
+# Compile of main.sv was successful.
+# Load canceled
+# Load canceled
+# Compile of main.sv failed with 1 errors.
+# Compile of main.sv failed with 1 errors.
+# Compile of main.sv was successful.
+vsim -gui work.main
+# vsim -gui work.main 
+# Start time: 13:35:44 on Feb 23,2021
+# Loading sv_std.std
+# Loading work.main
+add wave -position end  sim:/main/truth_table
+add wave -position end  sim:/main/error
+add wave -position end  sim:/main/x_0
+add wave -position end  sim:/main/x_1
+add wave -position end  sim:/main/x_2
+add wave -position end  sim:/main/z1
+run
+run -all
+run -all
+run -all
+run -all
+run
+restart
+run
+restart
+run
+restart
+run -all
+run -all
+run -all
+restart
+add wave -position end  sim:/main/takt
+run
+# Compile of main.sv was successful.
+restart
+# Loading work.main
+run
+add wave -position end  sim:/main/z_shenon
+restart
+run
+# Compile of main.sv was successful.
+restart
+# Loading work.main
+run
+add wave -position end  sim:/main/z_case
+restart
+run
+# Compile of main.sv was successful.
+# Compile of main.sv was successful.
+restart
+# Loading work.main
+run
+# Ctrl+G  ==>  Goto
+# Ctrl+H  ==>  Replace
+# Ctrl+U  ==>  Delete Line
+# Ctrl+W  ==>  Add Selection To Wave
+# Compile of main.sv was successful.
+restart
+# Loading work.main
+run
+# Compile of main.sv was successful.
+restart
+# Loading work.main
+run
+# Compile of main.sv was successful.
+# Compile of main.sv was successful.
+restart
+# Loading work.main
+run
+restart
+run
+# End time: 20:15:56 on Feb 24,2021, Elapsed time: 30:40:12
+# Errors: 0, Warnings: 0

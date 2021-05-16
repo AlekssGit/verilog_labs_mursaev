@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at components_my.sv(34): always construct contains both blocking and non-blocking assignments File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 34
+Warning (10268): Verilog HDL information at components_my.sv(83): always construct contains both blocking and non-blocking assignments File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 83
