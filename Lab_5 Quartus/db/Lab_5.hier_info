@@ -1,24 +1,27 @@
 |struct_l6
-clock => clock.IN1
-reset => reset.IN1
-start => start.IN1
-ready <= mp_mult:mult.port5
-in_data[0] => in_data[0].IN1
-in_data[1] => in_data[1].IN1
-in_data[2] => in_data[2].IN1
-in_data[3] => in_data[3].IN1
-in_data[4] => in_data[4].IN1
-in_data[5] => in_data[5].IN1
-in_data[6] => in_data[6].IN1
-in_data[7] => in_data[7].IN1
-result[0] <= mp_mult:mult.port4
-result[1] <= mp_mult:mult.port4
-result[2] <= mp_mult:mult.port4
-result[3] <= mp_mult:mult.port4
-result[4] <= mp_mult:mult.port4
-result[5] <= mp_mult:mult.port4
-result[6] <= mp_mult:mult.port4
-result[7] <= mp_mult:mult.port4
+clock => clock.IN2
+i_reset => reset.IN1
+i_start => start.IN1
+o_ready <= mp_mult:mult.port5
+in_data[0] => in_data[0].IN2
+in_data[1] => in_data[1].IN2
+in_data[2] => in_data[2].IN2
+in_data[3] => in_data[3].IN2
+in_data[4] => in_data[4].IN2
+in_data[5] => in_data[5].IN2
+in_data[6] => in_data[6].IN2
+in_data[7] => in_data[7].IN2
+lcd[0] <= lcd:lcd_show.lcd_out
+lcd[1] <= lcd:lcd_show.lcd_out
+lcd[2] <= lcd:lcd_show.lcd_out
+lcd[3] <= lcd:lcd_show.lcd_out
+lcd[4] <= lcd:lcd_show.lcd_out
+lcd[5] <= lcd:lcd_show.lcd_out
+lcd[6] <= lcd:lcd_show.lcd_out
+digits[0] <= lcd:lcd_show.digits
+digits[1] <= lcd:lcd_show.digits
+digits[2] <= lcd:lcd_show.digits
+digits[3] <= lcd:lcd_show.digits
 
 
 |struct_l6|mp_mult:mult
@@ -331,5 +334,115 @@ c_sh_rg[1] <= c_sh_rg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 c_cnt[0] <= c_cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 c_cnt[1] <= c_cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ready <= ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|struct_l6|lcd:lcd_show
+i_clock => i_clock.IN1
+data_dig_0[0] => data_dig_0[0].IN1
+data_dig_0[1] => data_dig_0[1].IN1
+data_dig_0[2] => data_dig_0[2].IN1
+data_dig_0[3] => data_dig_0[3].IN1
+data_dig_1[0] => data_dig_1[0].IN1
+data_dig_1[1] => data_dig_1[1].IN1
+data_dig_1[2] => data_dig_1[2].IN1
+data_dig_1[3] => data_dig_1[3].IN1
+data_dig_2[0] => ~NO_FANOUT~
+data_dig_2[1] => ~NO_FANOUT~
+data_dig_2[2] => ~NO_FANOUT~
+data_dig_2[3] => ~NO_FANOUT~
+data_dig_3[0] => data_dig_3[0].IN1
+data_dig_3[1] => data_dig_3[1].IN1
+data_dig_3[2] => data_dig_3[2].IN1
+data_dig_3[3] => data_dig_3[3].IN1
+digits[0] <= digits[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digits[1] <= digits[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digits[2] <= digits[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digits[3] <= digits[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_out[0] <= lcd_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_out[1] <= lcd_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_out[2] <= lcd_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_out[3] <= lcd_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_out[4] <= lcd_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_out[5] <= lcd_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_out[6] <= lcd_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|struct_l6|lcd:lcd_show|generator:gen_led
+i_clk => o_clk~reg0.CLK
+i_clk => counter[0].CLK
+i_clk => counter[1].CLK
+i_clk => counter[2].CLK
+i_clk => counter[3].CLK
+i_clk => counter[4].CLK
+i_clk => counter[5].CLK
+i_clk => counter[6].CLK
+i_clk => counter[7].CLK
+i_clk => counter[8].CLK
+i_clk => counter[9].CLK
+i_clk => counter[10].CLK
+i_clk => counter[11].CLK
+i_clk => counter[12].CLK
+i_clk => counter[13].CLK
+i_clk => counter[14].CLK
+i_clk => counter[15].CLK
+i_clk => counter[16].CLK
+i_clk => counter[17].CLK
+i_clk => counter[18].CLK
+i_clk => counter[19].CLK
+i_clk => counter[20].CLK
+i_clk => counter[21].CLK
+i_clk => counter[22].CLK
+i_clk => counter[23].CLK
+i_clk => counter[24].CLK
+i_clk => counter[25].CLK
+i_clk => counter[26].CLK
+i_clk => counter[27].CLK
+i_clk => counter[28].CLK
+i_clk => counter[29].CLK
+i_clk => counter[30].CLK
+i_clk => counter[31].CLK
+o_clk <= o_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|struct_l6|lcd:lcd_show|semisegment:seg_dig_1
+number[0] => Decoder0.IN3
+number[1] => Decoder0.IN2
+number[2] => Decoder0.IN1
+number[3] => Decoder0.IN0
+result[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|struct_l6|lcd:lcd_show|semisegment:seg_dig_0
+number[0] => Decoder0.IN3
+number[1] => Decoder0.IN2
+number[2] => Decoder0.IN1
+number[3] => Decoder0.IN0
+result[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|struct_l6|lcd:lcd_show|semisegment:seg_dig_3
+number[0] => Decoder0.IN3
+number[1] => Decoder0.IN2
+number[2] => Decoder0.IN1
+number[3] => Decoder0.IN0
+result[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

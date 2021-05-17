@@ -1,5 +1,5 @@
 Flow report for Lab_5
-Sun May 16 17:03:30 2021
+Mon May 17 12:19:57 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun May 16 17:03:30 2021       ;
+; Flow Status                        ; Successful - Mon May 17 12:19:57 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Lab_5                                       ;
 ; Top-level Entity Name              ; struct_l6                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 70 / 6,272 ( 1 % )                          ;
-;     Total combinational functions  ; 70 / 6,272 ( 1 % )                          ;
-;     Dedicated logic registers      ; 53 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 53                                          ;
-; Total pins                         ; 20 / 92 ( 22 % )                            ;
+; Total logic elements               ; 149 / 6,272 ( 2 % )                         ;
+;     Total combinational functions  ; 147 / 6,272 ( 2 % )                         ;
+;     Dedicated logic registers      ; 97 / 6,272 ( 2 % )                          ;
+; Total registers                    ; 97                                          ;
+; Total pins                         ; 23 / 92 ( 25 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/16/2021 17:02:38 ;
+; Start date & time ; 05/17/2021 12:19:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab_5               ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 79349042488396.162117375813020         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 1095769236895.162124315612788          ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -104,14 +104,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4764 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5496 MB             ; 00:00:06                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4690 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4758 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4633 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4642 MB             ; 00:00:01                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4766 MB             ; 00:00:41                           ;
+; Fitter               ; 00:00:09     ; 1.0                     ; 5519 MB             ; 00:00:14                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4693 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 4762 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4643 MB             ; 00:00:02                           ;
+; Total                ; 00:00:36     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -125,8 +123,6 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; Aleks-ThinkPad   ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; Aleks-ThinkPad   ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; Aleks-ThinkPad   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Aleks-ThinkPad   ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Aleks-ThinkPad   ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -138,8 +134,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off Lab_5 -c Lab_5
 quartus_asm --read_settings_files=off --write_settings_files=off Lab_5 -c Lab_5
 quartus_sta Lab_5 -c Lab_5
 quartus_eda --read_settings_files=off --write_settings_files=off Lab_5 -c Lab_5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab_5 -c Lab_5 --vector_source="C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/Waveform.vwf" --testbench_file="C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/simulation/qsim/Waveform.vwf.vt"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/simulation/qsim/" Lab_5 -c Lab_5
 
 
 

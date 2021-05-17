@@ -68,4 +68,27 @@ set_global_assignment -name SYSTEMVERILOG_FILE struct_l6.sv
 set_global_assignment -name SYSTEMVERILOG_FILE control.sv
 set_global_assignment -name SYSTEMVERILOG_FILE components_my.sv
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_location_assignment PIN_23 -to clock
+set_location_assignment PIN_133 -to digits[3]
+set_location_assignment PIN_135 -to digits[2]
+set_location_assignment PIN_136 -to digits[1]
+set_location_assignment PIN_137 -to digits[0]
+set_location_assignment PIN_49 -to in_data[7]
+set_location_assignment PIN_50 -to in_data[6]
+set_location_assignment PIN_52 -to in_data[4]
+set_location_assignment PIN_51 -to in_data[5]
+set_location_assignment PIN_53 -to in_data[3]
+set_location_assignment PIN_54 -to in_data[2]
+set_location_assignment PIN_55 -to in_data[1]
+set_location_assignment PIN_58 -to in_data[0]
+set_location_assignment PIN_124 -to lcd[6]
+set_location_assignment PIN_126 -to lcd[5]
+set_location_assignment PIN_132 -to lcd[4]
+set_location_assignment PIN_129 -to lcd[3]
+set_location_assignment PIN_125 -to lcd[2]
+set_location_assignment PIN_121 -to lcd[1]
+set_location_assignment PIN_128 -to lcd[0]
+set_location_assignment PIN_84 -to o_ready
+set_location_assignment PIN_88 -to i_reset
+set_location_assignment PIN_89 -to i_start
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

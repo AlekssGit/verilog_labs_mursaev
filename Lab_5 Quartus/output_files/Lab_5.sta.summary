@@ -3,39 +3,111 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -4.447
-TNS   : -175.656
+Slack : -4.972
+TNS   : -271.574
+
+Type  : Slow 1200mV 85C Model Setup 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : -1.786
+TNS   : -13.000
+
+Type  : Slow 1200mV 85C Model Setup 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : -0.362
+TNS   : -1.031
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.433
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : 0.503
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -81.811
+TNS   : -124.934
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : -1.487
+TNS   : -16.357
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : -1.487
+TNS   : -5.948
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -4.098
-TNS   : -161.613
+Slack : -4.519
+TNS   : -250.336
+
+Type  : Slow 1200mV 0C Model Setup 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : -1.574
+TNS   : -11.130
+
+Type  : Slow 1200mV 0C Model Setup 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : -0.299
+TNS   : -0.787
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.386
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : 0.423
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -81.811
+TNS   : -124.934
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : -1.487
+TNS   : -16.357
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : -1.487
+TNS   : -5.948
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -1.364
-TNS   : -56.757
+Slack : -1.499
+TNS   : -74.658
+
+Type  : Fast 1200mV 0C Model Setup 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : -0.184
+TNS   : -0.857
+
+Type  : Fast 1200mV 0C Model Setup 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : 0.169
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.175
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : 0.193
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -61.531
+TNS   : -91.805
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lcd:lcd_show|generator:gen_led|o_clk'
+Slack : -1.000
+TNS   : -11.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mp_mult:mult|control_unit:control_mod|ready'
+Slack : -1.000
+TNS   : -4.000
 
 ------------------------------------------------------------

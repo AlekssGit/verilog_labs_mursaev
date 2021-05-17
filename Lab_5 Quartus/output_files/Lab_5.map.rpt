@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab_5
-Sun May 16 17:02:46 2021
+Mon May 17 12:19:31 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -21,12 +21,15 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
  13. Parameter Settings for User Entity Instance: mp_mult:mult|counter:cnt
  14. Parameter Settings for User Entity Instance: mp_mult:mult|shift_register:shift_mod
  15. Parameter Settings for User Entity Instance: mp_mult:mult|control_unit:control_mod
- 16. Port Connectivity Checks: "mp_mult:mult|shift_register:shift_mod"
- 17. Port Connectivity Checks: "mp_mult:mult|counter:cnt"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
- 21. Analysis & Synthesis Suppressed Messages
+ 16. Parameter Settings for User Entity Instance: lcd:lcd_show|generator:gen_led
+ 17. Port Connectivity Checks: "lcd:lcd_show"
+ 18. Port Connectivity Checks: "mp_mult:mult|shift_register:shift_mod"
+ 19. Port Connectivity Checks: "mp_mult:mult|counter:cnt"
+ 20. Port Connectivity Checks: "mp_mult:mult"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,16 +56,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 16 17:02:46 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon May 17 12:19:31 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Lab_5                                       ;
 ; Top-level Entity Name              ; struct_l6                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 70                                          ;
-;     Total combinational functions  ; 70                                          ;
-;     Dedicated logic registers      ; 53                                          ;
-; Total registers                    ; 53                                          ;
-; Total pins                         ; 20                                          ;
+; Total logic elements               ; 152                                         ;
+;     Total combinational functions  ; 147                                         ;
+;     Dedicated logic registers      ; 97                                          ;
+; Total registers                    ; 97                                          ;
+; Total pins                         ; 23                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -179,6 +182,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                           ; Library ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
+; semisegment.v                    ; yes             ; User Verilog HDL File        ; C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/semisegment.v    ;         ;
+; generator.v                      ; yes             ; User Verilog HDL File        ; C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/generator.v      ;         ;
 ; struct_l6.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv     ;         ;
 ; control.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/control.sv       ;         ;
 ; components_my.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv ;         ;
@@ -190,30 +195,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 70          ;
+; Estimated Total logic elements              ; 152         ;
 ;                                             ;             ;
-; Total combinational functions               ; 70          ;
+; Total combinational functions               ; 147         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 21          ;
-;     -- 3 input functions                    ; 2           ;
-;     -- <=2 input functions                  ; 47          ;
+;     -- 4 input functions                    ; 66          ;
+;     -- 3 input functions                    ; 6           ;
+;     -- <=2 input functions                  ; 75          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 32          ;
-;     -- arithmetic mode                      ; 38          ;
+;     -- normal mode                          ; 82          ;
+;     -- arithmetic mode                      ; 65          ;
 ;                                             ;             ;
-; Total registers                             ; 53          ;
-;     -- Dedicated logic registers            ; 53          ;
+; Total registers                             ; 97          ;
+;     -- Dedicated logic registers            ; 97          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 20          ;
+; I/O pins                                    ; 23          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 53          ;
-; Total fan-out                               ; 415         ;
-; Average fan-out                             ; 2.55        ;
+; Maximum fan-out                             ; 82          ;
+; Total fan-out                               ; 776         ;
+; Average fan-out                             ; 2.68        ;
 +---------------------------------------------+-------------+
 
 
@@ -222,10 +227,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Entity Name    ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+----------------+--------------+
-; |struct_l6                       ; 70 (0)              ; 53 (0)                    ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |struct_l6                                       ; struct_l6      ; work         ;
-;    |mp_mult:mult|                ; 70 (0)              ; 53 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|mp_mult:mult                          ; mp_mult        ; work         ;
+; |struct_l6                       ; 147 (0)             ; 97 (4)                    ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |struct_l6                                       ; struct_l6      ; work         ;
+;    |lcd:lcd_show|                ; 81 (17)             ; 44 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|lcd:lcd_show                          ; lcd            ; work         ;
+;       |generator:gen_led|        ; 43 (43)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|lcd:lcd_show|generator:gen_led        ; generator      ; work         ;
+;       |semisegment:seg_dig_0|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|lcd:lcd_show|semisegment:seg_dig_0    ; semisegment    ; work         ;
+;       |semisegment:seg_dig_1|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|lcd:lcd_show|semisegment:seg_dig_1    ; semisegment    ; work         ;
+;       |semisegment:seg_dig_3|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|lcd:lcd_show|semisegment:seg_dig_3    ; semisegment    ; work         ;
+;    |mp_mult:mult|                ; 66 (0)              ; 49 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|mp_mult:mult                          ; mp_mult        ; work         ;
 ;       |control_unit:control_mod| ; 51 (51)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|mp_mult:mult|control_unit:control_mod ; control_unit   ; work         ;
-;       |counter:cnt|              ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|mp_mult:mult|counter:cnt              ; counter        ; work         ;
+;       |counter:cnt|              ; 6 (6)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|mp_mult:mult|counter:cnt              ; counter        ; work         ;
 ;       |shift_register:shift_mod| ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |struct_l6|mp_mult:mult|shift_register:shift_mod ; shift_register ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -239,7 +249,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; mp_mult:mult|control_unit:control_mod|state[1..9,11..31] ; Merged with mp_mult:mult|control_unit:control_mod|state[10] ;
 ; mp_mult:mult|control_unit:control_mod|c_sh_rg[0]         ; Merged with mp_mult:mult|control_unit:control_mod|c_cnt[0]  ;
 ; mp_mult:mult|control_unit:control_mod|state[10]          ; Stuck at GND due to stuck port data_in                      ;
-; Total Number of Removed Registers = 32                   ;                                                             ;
+; mp_mult:mult|counter:cnt|par_out[4..7]                   ; Lost fanout                                                 ;
+; Total Number of Removed Registers = 36                   ;                                                             ;
 +----------------------------------------------------------+-------------------------------------------------------------+
 
 
@@ -248,12 +259,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 53    ;
-; Number of registers using Synchronous Clear  ; 40    ;
+; Total registers                              ; 97    ;
+; Number of registers using Synchronous Clear  ; 68    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 49    ;
+; Number of registers using Clock Enable       ; 45    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -263,9 +274,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 4:1                ; 33 bits   ; 66 LEs        ; 66 LEs               ; 0 LEs                  ; Yes        ; |struct_l6|mp_mult:mult|control_unit:control_mod|k[4]       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |struct_l6|lcd:lcd_show|digits[0]                           ;
+; 4:1                ; 33 bits   ; 66 LEs        ; 66 LEs               ; 0 LEs                  ; Yes        ; |struct_l6|mp_mult:mult|control_unit:control_mod|k[10]      ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |struct_l6|mp_mult:mult|counter:cnt|par_out[0]              ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |struct_l6|mp_mult:mult|shift_register:shift_mod|par_out[0] ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |struct_l6|lcd:lcd_show|lcd_out[6]                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -323,6 +336,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lcd:lcd_show|generator:gen_led ;
++----------------+--------+---------------------------------------------------+
+; Parameter Name ; Value  ; Type                                              ;
++----------------+--------+---------------------------------------------------+
+; scaler         ; 100000 ; Signed Integer                                    ;
++----------------+--------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "lcd:lcd_show"     ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; data_dig_2 ; Input ; Info     ; Stuck at GND ;
++------------+-------+----------+--------------+
+
+
 +------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "mp_mult:mult|shift_register:shift_mod"                                                      ;
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -345,29 +377,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mp_mult:mult"                                                                               ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; result[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 20                          ;
-; cycloneiii_ff         ; 53                          ;
+; boundary_port         ; 23                          ;
+; cycloneiii_ff         ; 97                          ;
 ;     CLR               ; 2                           ;
 ;     ENA               ; 9                           ;
-;     ENA CLR SCLR      ; 8                           ;
+;     ENA CLR SCLR      ; 4                           ;
 ;     ENA SCLR          ; 32                          ;
-;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 70                          ;
-;     arith             ; 38                          ;
-;         2 data inputs ; 38                          ;
-;     normal            ; 32                          ;
-;         1 data inputs ; 3                           ;
+;     SCLR              ; 32                          ;
+;     plain             ; 18                          ;
+; cycloneiii_lcell_comb ; 148                         ;
+;     arith             ; 65                          ;
+;         2 data inputs ; 65                          ;
+;     normal            ; 83                          ;
+;         1 data inputs ; 5                           ;
 ;         2 data inputs ; 6                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 21                          ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 66                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.97                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.90                        ;
 +-----------------------+-----------------------------+
 
 
@@ -376,7 +418,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -386,7 +428,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun May 16 17:02:37 2021
+    Info: Processing started: Mon May 17 12:19:14 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_5 -c Lab_5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -394,10 +436,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file semiseg
     Info (12023): Found entity 1: semisegment File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/semisegment.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file generator.v
     Info (12023): Found entity 1: generator File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/generator.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file tb.sv
-Info (12021): Found 2 design units, including 2 entities, in source file struct_l6.sv
+Info (12021): Found 3 design units, including 3 entities, in source file struct_l6.sv
     Info (12023): Found entity 1: struct_l6 File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 1
-    Info (12023): Found entity 2: mp_mult File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 37
+    Info (12023): Found entity 2: mp_mult File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 40
+    Info (12023): Found entity 3: lcd File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 63
 Info (12021): Found 1 design units, including 1 entities, in source file control.sv
     Info (12023): Found entity 1: control_unit File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/control.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file components_my.sv
@@ -418,30 +460,34 @@ Info (10499): HDL info at control.sv(4): see declaration for object "c_sh_rg" Fi
 Warning (10227): Verilog HDL Port Declaration warning at control.sv(12): data type declaration for "c_cnt" declares packed dimensions but the port declaration declaration does not File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/control.sv Line: 12
 Info (10499): HDL info at control.sv(4): see declaration for object "c_cnt" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/control.sv Line: 4
 Info (12127): Elaborating entity "struct_l6" for the top level hierarchy
-Info (12128): Elaborating entity "mp_mult" for hierarchy "mp_mult:mult" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 32
-Info (12128): Elaborating entity "counter" for hierarchy "mp_mult:mult|counter:cnt" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 52
+Info (12128): Elaborating entity "mp_mult" for hierarchy "mp_mult:mult" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 24
+Info (12128): Elaborating entity "counter" for hierarchy "mp_mult:mult|counter:cnt" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 55
 Warning (10235): Verilog HDL Always Construct warning at components_my.sv(24): variable "s" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 24
 Warning (10235): Verilog HDL Always Construct warning at components_my.sv(25): variable "par_out" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at components_my.sv(25): truncated value with size 32 to match size of target (1) File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 25
 Warning (10235): Verilog HDL Always Construct warning at components_my.sv(26): variable "s" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 26
 Warning (10240): Verilog HDL Always Construct warning at components_my.sv(23): inferring latch(es) for variable "carry_out", which holds its previous value in one or more paths through the always construct File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 23
 Info (10041): Inferred latch for "carry_out" at components_my.sv(26) File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 26
-Info (12128): Elaborating entity "shift_register" for hierarchy "mp_mult:mult|shift_register:shift_mod" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 54
+Info (12128): Elaborating entity "shift_register" for hierarchy "mp_mult:mult|shift_register:shift_mod" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 57
 Warning (10230): Verilog HDL assignment warning at components_my.sv(100): truncated value with size 32 to match size of target (1) File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/components_my.sv Line: 100
-Info (12128): Elaborating entity "control_unit" for hierarchy "mp_mult:mult|control_unit:control_mod" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 56
+Info (12128): Elaborating entity "control_unit" for hierarchy "mp_mult:mult|control_unit:control_mod" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 59
+Info (12128): Elaborating entity "lcd" for hierarchy "lcd:lcd_show" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 35
+Info (12128): Elaborating entity "generator" for hierarchy "lcd:lcd_show|generator:gen_led" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 83
+Info (12128): Elaborating entity "semisegment" for hierarchy "lcd:lcd_show|semisegment:seg_dig_1" File: C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/struct_l6.sv Line: 85
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/alvas/Documents/Univer/Mursaev/Lab_5 Quartus/output_files/Lab_5.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 90 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 175 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 70 logic cells
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 152 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Sun May 16 17:02:46 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 4766 megabytes
+    Info: Processing ended: Mon May 17 12:19:31 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:42
 
 
 +------------------------------------------+

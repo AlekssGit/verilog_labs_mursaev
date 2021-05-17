@@ -4,19 +4,43 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "data_out[0]",
+					"name" : "leds_data_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "data_out[1]",
+					"name" : "leds_data_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "data_out[2]",
+					"name" : "leds_data_out[2]",
 					"strict" : false
 				},
 				{
 					"name" : "lcd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd[6]",
 					"strict" : false
 				},
 				{

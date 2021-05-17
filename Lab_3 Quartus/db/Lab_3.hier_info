@@ -1,19 +1,19 @@
 |Tb__l3
-data_out[0] <= complex:m2.data_out
-data_out[1] <= complex:m2.data_out
-data_out[2] <= complex:m2.data_out
+leds_data_out[0] << complex:m2.data_out
+leds_data_out[1] << complex:m2.data_out
+leds_data_out[2] << complex:m2.data_out
 i_clock => i_clock.IN1
-lcd[0] <= semisegment:sem.result
-lcd[1] <= <VCC>
-lcd[2] <= <VCC>
-lcd[3] <= <VCC>
-lcd[4] <= <VCC>
-lcd[5] <= <VCC>
-lcd[6] <= <VCC>
-digits[0] <= <GND>
-digits[1] <= <VCC>
-digits[2] <= <VCC>
-digits[3] <= <VCC>
+lcd[0] << semisegment:sem.result
+lcd[1] << semisegment:sem.result
+lcd[2] << semisegment:sem.result
+lcd[3] << semisegment:sem.result
+lcd[4] << semisegment:sem.result
+lcd[5] << semisegment:sem.result
+lcd[6] << semisegment:sem.result
+digits[0] << <GND>
+digits[1] << <VCC>
+digits[2] << <VCC>
+digits[3] << <VCC>
 
 
 |Tb__l3|generator:gen

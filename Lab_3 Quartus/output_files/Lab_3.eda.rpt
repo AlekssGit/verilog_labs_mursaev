@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Lab_3
-Sun May 16 15:01:01 2021
+Mon May 17 10:36:51 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun May 16 15:01:01 2021 ;
+; EDA Netlist Writer Status ; Successful - Mon May 17 10:36:51 2021 ;
 ; Revision Name             ; Lab_3                                 ;
 ; Top-level Entity Name     ; Tb__l3                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun May 16 15:00:58 2021
+    Info: Processing started: Mon May 17 10:36:48 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Lab_3 -c Lab_3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Lab_3.svo in folder "C:/Users/alvas/Documents/Univer/Mursaev/Lab_3 Quartus/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Sun May 16 15:01:01 2021
+    Info: Processing ended: Mon May 17 10:36:51 2021
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

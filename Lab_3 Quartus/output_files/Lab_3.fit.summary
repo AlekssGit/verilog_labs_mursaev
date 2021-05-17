@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun May 16 15:00:43 2021
+Fitter Status : Successful - Mon May 17 10:36:36 2021
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : Lab_3
 Top-level Entity Name : Tb__l3
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 50 / 6,272 ( < 1 % )
-    Total combinational functions : 49 / 6,272 ( < 1 % )
+Total logic elements : 57 / 6,272 ( < 1 % )
+    Total combinational functions : 55 / 6,272 ( < 1 % )
     Dedicated logic registers : 36 / 6,272 ( < 1 % )
 Total registers : 36
 Total pins : 15 / 92 ( 16 % )
